@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mistérios do Rosário na Arte</title>
+  <meta name="description" content="Auxílio visual para rezar o Rosário: os mistérios pintados por Lotto, Giotto, Duccio, Dürer, Memling e outros mestres.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect x='13' y='3' width='6' height='26' rx='1' fill='%23b8892f'/><rect x='6' y='9' width='20' height='6' rx='1' fill='%23b8892f'/></svg>">
+</head>
+<body>
+  <header class="topo">
+    <a href="#" class="marca">
+      <span class="cruz" aria-hidden="true">✠</span>
+      <span>Mistérios do Rosário <em>na arte</em></span>
+    </a>
+    <nav class="abas" aria-label="Modo de navegação">
+      <a href="#misterios" data-aba="misterios">Por mistério</a>
+      <a href="#pintores" data-aba="pintores">Por pintor</a>
+    </nav>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="oracao" class="oracao" hidden role="dialog" aria-modal="true" aria-label="Modo oração">
+    <button class="fechar" data-acao="fechar" aria-label="Fechar">×</button>
+    <button class="seta esq" data-acao="ant" aria-label="Anterior">‹</button>
+    <button class="seta dir" data-acao="prox" aria-label="Próximo">›</button>
+    <figure>
+      <div class="quadro"></div>
+      <figcaption>
+        <p class="o-grupo"></p>
+        <h2 class="o-nome"></h2>
+        <p class="o-obra"></p>
+        <div class="contas" aria-hidden="true"></div>
+      </figcaption>
+    </figure>
+  </div>
+
+  <footer class="rodape">
+    <p>Imagens de domínio público via <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a>, salvo indicação. Toque em uma obra para abrir o <strong>modo oração</strong>; use as setas ou deslize para avançar.</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
